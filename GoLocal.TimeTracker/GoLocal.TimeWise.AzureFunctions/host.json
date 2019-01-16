@@ -6,15 +6,15 @@
   },
   "AzureAd": {
     "Instance": "https://login.microsoftonline.com/",
-    "ClientId": "<to be updated>",
-    "CallbackPath": "/signin-oidc",
-    "BaseUrl": "<to be updated>",
-    "ClientSecret": "<to be updated>",
+    "ClientId": "9978a210-6774-4976-bfc0-8735d1fb3db4",
+    "CallbackPath": "/home",
+    "BaseUrl": "https://devtimesheet.azurewebsites.net",
+    "ClientSecret": "woqhMCC7894*;;mfrOLVX9_",
     "Scopes": "openid email profile offline_access",
     "GraphResourceId": "https://graph.microsoft.com/",
-    "GraphScopes": "email, profile, Calendars.Read, Mail.Read, opened, Sites.Read.All, User.Read.All, Mail.Send, Sites.Manage.All, Sites.ReadWrite.All, Group.Read.All Mail.Send",
+    "GraphScopes": "Group.Read.All Calendars.Read Mail.Read Mail.Send Sites.Read.All Sites.ReadWrite.All Sites.Manage.All User.Read.All User.ReadWrite.All",
     "ApiUrl": "https://localhost:44376/",
-    "TenantId": "<to be updated>"
+    "TenantId": "57cf6f23-a338-484d-a450-9accd87184fc"
   },
   "TimeTracker": {
     "DayHours": "8",
@@ -22,9 +22,9 @@
     "MonthHours": "0",
 
     "FirstDayWeek": "Monday",
-    "TimeZone": "Pacific Standard Time", 
-    "CutoffDayEmployee": "0 0 20 * *",
-    "CutoffDayManager": "0 0 21 * *",
+    "TimeZone": "Tokyo Standard Time", 
+    "CutoffDayEmployee": "0 0 3 * *",
+    "CutoffDayManager": "0 0 10 * *",
     "DaysHistory": "360",
 
     "ReceivedEmailTime": "3",
@@ -44,48 +44,53 @@
 
     "AdminGroup": "TimeTracker Administrator",
     "HrGroup": "Human Resources",
-    "HrNotificationMail": "<to be updated>",
+    "HrNotificationMail": "humanresources@hayashix.onmicrosoft.com",
     "HrNotificationAlerts": "true",
 
-    "SharePointSiteId": "<to be updated>",
-    "SharePointSiteName": "Timesheet",
+    "SharePointSiteId": "hayashix.sharepoint.com,109121af-4784-47e5-b090-290894426a4c,3465d08b-22b3-4a22-90d7-2f6817d98c44",
+    "SharePointSiteName": "TimeSheet",
     "SharePointGroupId": "GroupMembership",
-    "SharePointUsersList": "TimeTrackerUsers",
+    "SharePointUsersList": "TimesheetUsers",
     "SharePointTotalHoursList": "DailyTotalHours",
 
     "ReportHoursListPrefix": "reporthours_",
     "TeamHoursListPrefix": "teamhours_",
     "WorkHoursListPrefix": "workhours_",
     "NotificationsListPrefix": "notifications_",
-
+    "SubmitHoursForLastMonth": "<to be updated>",
+    "HoursRevisionRequest": "<to be updated>",
+    "SaveHrsByDate": "<to be updated>",
+    "FirstTimeLogin": "<to be updated>",
+    "SubmitTeamHours": "<to be updated>",
+    "ObjectIdentifier": "http://schemas.microsoft.com/identity/claims/objectidentifier",
     "GraphRequestUrl": "https://graph.microsoft.com/v1.0/",
     "GraphBetaRequestUrl": "https://graph.microsoft.com/beta/"
   },
-    "Logging": {
-      "IncludeScopes": false,
-      "Debug": {
-        "LogLevel": {
-          "Microsoft": "Trace",
-          "Default": "Debug"
-        }
-      },
-      "Console": {
-        "LogLevel": {
-          "Microsoft.AspNetCore": "Warning",
-          "Microsoft": "Debug",
-          "Default": "Information"
-        }
-      },
-      "EventLog": {
-        "LogLevel": {
-          "Default": "Information"
-        }
-      },
+  "Logging": {
+    "IncludeScopes": false,
+    "Debug": {
+      "LogLevel": {
+        "Microsoft": "Trace",
+        "Default": "Debug"
+      }
+    },
+    "Console": {
+      "LogLevel": {
+        "Microsoft.AspNetCore": "Warning",
+        "Microsoft": "Debug",
+        "Default": "Information"
+      }
+    },
+    "EventLog": {
       "LogLevel": {
         "Default": "Information"
       }
     },
-    "ApplicationInsights": {
-      "InstrumentationKey": "<to be updated>"
+    "LogLevel": {
+      "Default": "Information"
     }
+  },
+  "ApplicationInsights": {
+    "InstrumentationKey": "<to be updated>"
   }
+}
