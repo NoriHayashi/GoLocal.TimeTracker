@@ -1,4 +1,9 @@
-﻿{
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true"
+  },
   "AzureAd": {
     "Instance": "https://login.microsoftonline.com/",
     "ClientId": "9978a210-6774-4976-bfc0-8735d1fb3db4",
